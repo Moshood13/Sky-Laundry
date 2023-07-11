@@ -1,0 +1,478 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300&family=Roboto+Condensed:ital,wght@1,300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lumanosimo&display=swap');
+
+
+*::before,
+*::after,
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --fontcolor1: rgb(255, 255, 255);
+    --fontcolor2: rgb(233, 233, 233);
+    --fontcolor3: rgba(0, 0, 0, 0.706);
+    --btncolor: rgb(0, 134, 0);
+}
+
+body {
+    background-color: white;
+    font-family: 'Roboto Condensed', sans-serif;
+    padding: 0;
+    margin: 0;
+}
+
+/* styling the home section */
+.home {
+    background: linear-gradient(118deg, rgba(35, 33, 168, 0.705)70%, rgba(7, 7, 41, 0.514)), url(views/img/tima.jpg) no-repeat fixed center;
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
+}
+
+/* styling the header and the nav */
+header {
+    display: flex;
+    width: 100%;
+    padding: 30px 50px;
+    justify-content: space-between;
+    position: sticky;
+    background-color: linear-gradient(118deg, rgba(35, 33, 168, 0.705)70%, rgba(7, 7, 41, 0.514));
+}
+
+.logo {
+    width: 200px;
+    height: 100px;
+}
+
+/*  .logo-txt {
+    color: #fff;
+    font-size: 20px;
+    font-family: 'Lumanosimo', cursive;
+}
+*/
+
+.comp-logo {
+    width: 100px;
+    border-radius: 20px;
+}
+
+.nav {
+    display: flex;
+    gap: 30px;
+}
+
+.nav .navlink {
+    text-decoration: none;
+    color: var(--fontcolor1);
+    font-size: 1em;
+}
+
+.navlink:hover {
+    font-size: 1.1em;
+    text-decoration: underline;
+    color: var(--fontcolor1);
+    transition: 0.4s all ease-in-out;
+}
+
+/* End of the header styling */
+
+/* Home section styling starts here */
+
+.home .txt {
+    margin: 0 40px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.txt h1 {
+    color: var(--fontcolor1);
+    font-size: 3.5em;
+    width: 50vw;
+    line-height: 70px;
+}
+
+.txt p {
+    color: var(--fontcolor2);
+    width: 40vw;
+    font-size: 1.2em;
+    line-height: 30px;
+}
+
+.txt .btn {
+    background: transparent;
+    border: none;
+    outline: none;
+    color: var(--fontcolor1);
+    font-size: 1em;
+    cursor: pointer;
+    transition: all 1s ease-in;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 150px;
+    position: relative;
+    padding: 10px 5px;
+}
+
+.txt .btn:hover {
+    color: #000;
+}
+
+.btn svg {
+    height: 40px;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+}
+
+.btn rect {
+    fill: none;
+    stroke: #fff;
+    stroke-width: 2px;
+    stroke-dasharray: 450, 0;
+    transition: all 0.5s linear;
+}
+
+.txt .btn:hover rect {
+    stroke-width: 5;
+    stroke-dasharray: 20, 300;
+    stroke-dashoffset: 48;
+    stroke: #000;
+    transition: all 2s cubic-bezier(0.22, 1, 0.25, 1);
+}
+/* Home section ends here */
+
+/* About section styling starts here*/
+.about {
+    width: 100%;
+    background-color: rgba(221, 221, 221, 0.5);
+    padding: 50px 0;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+
+.about .txt-01 {
+    display: flex;
+    height: 100%;
+    margin-left: 50px;
+}
+
+.h2-01 {
+    font-size: 2em;
+}
+
+.card-01 {
+    display: flex;
+    width: 80%;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    height: 100%;
+    margin: 0 auto;
+}
+.p-00 {
+    color: var(--fontcolor3)
+}
+.img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 30px auto;
+}
+/*About section styling starts here*/
+
+/*Product plan styling starts here*/
+.service {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin: 50px 0;
+    gap: 40px;
+}
+.h2-02 {
+    text-align: left;
+    margin-left: 50px;
+}
+.service-card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.card-plan .bd {
+    color: var(--fontcolor1);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+    border: none;
+}
+.bd:hover {
+    height: 70vh;
+    cursor:default;
+}
+.service-card:hover > :not(:hover) {
+    margin-top: 30px;
+    opacity: 0.3;
+}
+.plan01 {
+    background-color: rgb(11, 138, 68);
+    backdrop-filter: blur(20px);
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+}
+.plan02 {
+    background-color: rgb(0, 68, 255);
+    backdrop-filter: blur(20px);
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+}
+.plan03 {
+    background-color: rgb(252, 50, 50);
+    backdrop-filter: blur(20px);
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+}
+
+.title-plan {
+    color: var(--fontcolor1);
+    padding-left: 20px;
+    padding-top: 20px;
+    font-weight: 700;
+    font-size: 2em;
+    margin-bottom: 40px;
+}
+.txt-plan {
+    color: var(--fontcolor2);
+    width: 80%;
+    font-size: 16px;
+}
+.li-plan {
+    margin-top: 40px;
+}
+.pay-plan {
+    text-decoration: none;
+    margin: 30px;
+    color: var(--fontcolor1);
+    border: 1px solid #fff;
+    padding: 10px;
+}
+/*Product Plan styling ends here*/
+
+
+/*Summary section styling starts here*/
+.summary {
+    width: 100%;
+    margin: 100px 0;
+    background: linear-gradient(rgba(228, 228, 228, 0.705),rgba(228, 228, 228, 0.705)), url(views/img/inner-4.jpg) fixed center no-repeat;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 70px;
+}
+.h2-03 {
+    text-align: center;
+    margin: 20px 0;
+    font-size: 2.5em;
+    transform: scale(1,1.2);
+}
+.p-01 {
+    width: 70%;
+    margin: 0 auto;
+    text-align: center;
+    line-height: 30px;
+    color: var(--fontcolor3);
+    font-size: 18px;
+    font-weight: 500;
+}
+.btn-02 {
+    text-decoration: none;
+    padding: 10px;
+    border: 1px solid #fff;
+    background-color: rgba(35, 33, 168, 0.705);
+    color: var(--fontcolor1);
+    border-radius: 10px;
+    width: 150px;
+    margin: 20px auto;
+    text-align: center;
+    cursor: pointer;
+}
+/*Summary section styling ends here*/
+
+/*Info section styling starts here*/
+.info-01 {
+    display: flex;
+    width: 90%;
+    margin: 200px auto;
+    justify-content: space-between;
+}
+.info-img00 {
+    margin: 0 30px;
+}
+.img-01 {
+    object-fit: cover;
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+}
+.info-txt01 {
+    margin: 50px 0;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 40%;
+}
+.h2-04 {
+    font-size: 2.5em;
+    font-weight: 700;
+}
+.btn-03 {
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    border: 1px solid #fff;
+    background-color: rgba(35, 33, 168, 0.705);
+    color: var(--fontcolor1);
+    border-radius: 10px;
+}
+/*Info section styling ends here*/
+
+/*reviews section starts here*/
+.reviews {
+    background: linear-gradient(135deg, rgba(36, 35, 35, 0.897),rgba(31, 31, 31, 0.705) 60%), url(views/img/dress.jpg) no-repeat fixed center;;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    padding: 80px;
+    backdrop-filter: blur(20px);
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+}
+.fb-00 {
+    color: var(--fontcolor1);
+    text-align: left;
+    font-size: 1.1em;
+    font-weight: 600;
+    text-decoration: underline;
+}
+.reviews .h5-00, .p-0 {
+    border: none;
+    background: linear-gradient(118deg, rgba(85, 85, 85, 0.473)70%, rgba(6, 6, 48, 0.507));
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+    color: var(--fontcolor1);
+    border-radius: 10px;
+}
+.reviews .h5-00 {
+    text-align: center;
+    line-height: 40px;
+    font-style: italic;
+    padding: 30px;
+    margin: 0 auto;
+    width: max-content;
+}
+.reviews .p-0 {
+    margin: 30px;
+    width: max-content;
+    margin: auto;
+    text-align: center;
+    font-size: 1.2em;
+    font-style: italic;
+    padding: 20px;
+}
+.btn-review {
+    background-color: rgba(35, 33, 168, 0.705);
+    width: 150px;
+    margin: auto;
+    border: none;
+    color: var(--fontcolor1);
+    padding: 10px 10px;
+    outline: none;
+    border-radius: 10px;
+    margin-top: 30px;
+}
+
+/*reviews section ends here*/
+
+/* Request form hidden
+.request {
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(71, 71, 71, 0.822);
+    top: 0;
+    padding: 50px;
+}
+.req-back {
+    display: flex;
+    gap: 40px;
+    width: 80%;
+    margin: auto;
+    background: white;
+}
+.request-form {
+    width: 50%;
+    padding: 10px;
+}
+.h5-01 {
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+.p-04 {
+    color: var(--fontcolor3);
+}
+.form-00 {
+    display: flex;
+    flex-direction: column;
+}
+.inline-01 {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 10px;
+}
+*/
+
+/* hides the request form */
+.hidden {
+    display: none;
+}
+
+/* footer styling starts here*/
+.ft-00 {
+    display: flex;
+    justify-content: space-evenly;
+    background-color: #f0f0f0;
+    padding: 10px;
+}
+.ft-ski {
+    width: 35%;
+}
+.logo-txt00, .res-00, .pol-00, .comp-00 {
+    font-size: 1.5em;
+}
+.p-03, .li-txt01, .txt-02, .txt-03 {
+    font-size: 16px;
+    color: var(--fontcolor3);
+}
+
+.ul-00 {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.li-00:hover {
+    color: rgba(35, 33, 168, 0.705);
+    text-decoration: underline;
+    cursor: pointer;
+    font-family: l;
+}
+/*footer styling ends here
