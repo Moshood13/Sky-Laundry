@@ -8,42 +8,68 @@
     <link rel="stylesheet" href="index.css" />
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://kit.fontawesome.com/4b236e4bbf.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="path/to/swiper.min.css">
+    <script src="path/to/swiper.min.js"></script>
 </head>
 
 <body>
+    <!--Creating the header-->
+    <input type="checkbox" id="toggler">
+    <label for="toggler" class="nav-label"><i class="fa fa-bars"></i></label>
+    <header>
+        <div class="call">
+            <i class="fa-solid fa-mobile-retro" style="font-size: 1.2em;"></i><span class="number"
+                style="font-size: 16px;">+2340001112222</span>
+        </div>
+        <div class="logo">
+            <img src="views/img/logo.jpg" alt="business-logo" class="comp-logo">
+        </div>
+        <nav class="nav">
+            <a href="" class="navlink">Home</a>
+            <a href="" class="navlink">About</a>
+            <a href="" class="navlink">Service</a>
+            <a href="" class="navlink">Price</a>
+            <a href="" class="navlink">Contact</a>
+        </nav>
+        <div class="sm">
+            <button class="btn-05">
+                <span class="btn-txt">
+                    Follow Us
+                </span>
+                <span class="btn-links02">
+                    <a href=""><i class="fa-brands fa-facebook"></i></a>
+                    <a href=""><i class="fa-brands fa-twitter"></i></a>
+                    <a href=""><i class="fa-brands fa-instagram"></i></a>
+                </span>
+            </button>
+        </div>
+    </header>
+    <!--End of the header section-->
     <section class="home">
-        <!--Creating the header-->
-        <header>
-            <div class="logo">
-                <img src="views/img/logo.jpg" alt="business-logo" class="comp-logo">
-            </div>
-            <nav class="nav">
-                <a href="" class="navlink">Home</a>
-                <a href="" class="navlink">About</a>
-                <a href="" class="navlink">Service</a>
-                <a href="" class="navlink">Portfolio</a>
-                <a href="" class="navlink">Contact</a>
-            </nav>
-        </header>
-        <!--End of the header section-->
 
         <!--Creating the home section-->
         <div class="txt">
-            <h1>Let us take your cleaniness to the next level!</h1>
-            <p>Sky laundry brings you the quality, convenience and comfort that best suit your your search for a laundry
+            <h1><span class="inline-03">Laundry</span> <span class="inline-04">made easy</span><span
+                    class="inline-03">.</span></h1>
+            <p class="p-05">Sky laundry brings you the quality, convenience and comfort that best suit your your search
+                for a laundry
                 service. Our professionalsm and expertise makes us the only option that can compliment your laundry
                 needs. </p>
             <div class="btn-links">
-                <button class="btn">
+                <button class="btn btn-01">
                     <svg>
                         <rect x="0" y="0" fill="none" width="100%" height="100%" />
                     </svg>
-                    Hire us now
+                    Hire us Today
                 </button>
-                <div class="sm-icons">
-
-                </div>
+                <button class="btn-04">Explore</button>
             </div>
+        </div>
+        <div class="promo">
+            <img src="views/img/promo.png" alt="" class="promo">
         </div>
     </section>
     <!--End of home section-->
@@ -52,115 +78,115 @@
     <section class="about">
         <div class="txt-01">
             <h2 class="h2-01">Why We are the best.</h2>
+            <div class="line"></div>
         </div>
-        <div class="card-01">
-            <div class="card" style="width: 22rem;">
-                <img src="views/img/flash.png" class="card-img-top img" alt="..." style="width: 100px;">
-                <div class="card-body">
-                    <h5 class="card-title">Quick Service</h5>
-                    <p class="card-text p-00">Our fast turnaround times guarantee you the best experience possible. Our
-                        friendly professionals can pick up and deliver your laundry quickly and conveniently, so you get
-                        your cleaned and pressed wardrobe in a jiffy.</p>
+        <swiper-container class="mySwiper-01" pagination="true" pagination-clickable="true" space-between="30"
+            centered-slides="true" autoplay-delay="2500" autoplay-disable-on-interaction="false">
+            <swiper-slide>
+                <div class="card-02">
+                    <img src="views/img/clock2.jpg" class="card-img-top img" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title-01">Quick Service</h5>
+                        <p class="card-text p-00">Our fast turnaround times guarantee you the best experience possible.
+                            Our
+                            friendly professionals can pick up and deliver your laundry quickly and conveniently, so you
+                            get
+                            your cleaned and pressed wardrobe in a jiffy.
+                            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Minus impedit facere ea velit eius
+                            dolorum tempore ad et maxime quis harum voluptatem dolores autem, amet id delectus magnam
+                            nemo saepe.
+                            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Minus impedit facere ea velit eius
+                            dolorum tempore ad et maxime quis harum voluptatem dolores autem, amet id delectus magnam
+                            nemo saepe.
+                        </p>
+
+                    </div>
                 </div>
-            </div>
-            <div class="card" style="width: 22rem;">
-                <img src="views/img/clock.png" class="card-img-top img" alt="..." style="width: 100px;">
-                <div class="card-body">
-                    <h5 class="card-title">24/7 Availability</h5>
-                    <p class="card-text  p-00">Whether you call us on a Monday morning or request our services on a
-                        Sunday night, our team is always available to take care of your laundry needs..</p>
+            </swiper-slide>
+            <swiper-slide>
+                <div class="card-02">
+                    <img src="views/img/available.jpg" class="card-img-top img" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title-01">24/7 Availability</h5>
+                        <p class="card-text  p-00">Whether you call us on a Monday morning or request our services on a
+                            Sunday night, our team is always available to take care of your laundry needs.
+                            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Minus impedit facere ea velit eius
+                            dolorum tempore ad et maxime quis harum voluptatem dolores autem, amet id delectus magnam
+                            nemo saepe.
+                            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Minus impedit facere ea velit eius
+                            dolorum tempore ad et maxime quis harum voluptatem dolores autem, amet id delectus magnam
+                            nemo saepe.
+                        </p>
+                    </div>
                 </div>
-            </div>
-            <div class="card" style="width: 22rem;">
-                <img src="views/img/staff.png" class="card-img-top img" alt="..." style="width: 100px;">
-                <div class="card-body">
-                    <h5 class="card-title">Trained Experts</h5>
-                    <p class="card-text  p-00">Our team has the skills to deliver top-notch services and make sure that
-                        all
-                        your laundry needs are taken care of.</p>
+            </swiper-slide>
+            <swiper-slide>
+                <div class="card-02">
+                    <img src="views/img/employees.jpg" class="card-img-top img" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title-01">Trained Experts</h5>
+                        <p class="card-text  p-00">Our team has the skills to deliver top-notch services and make sure
+                            that
+                            all
+                            your laundry needs are taken care of.
+                            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Minus impedit facere ea velit eius
+                            dolorum tempore ad et maxime quis harum voluptatem dolores autem, amet id delectus magnam
+                            nemo saepe.
+                            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Minus impedit facere ea velit eius
+                            dolorum tempore ad et maxime quis harum voluptatem dolores autem, amet id delectus magnam
+                            nemo saepe.
+                        </p>
+                    </div>
                 </div>
-            </div>
-            <div class="card" style="width: 22rem;">
-                <img src="views/img/truck.png" class="card-img-top img" alt="..." style="width: 100px;">
-                <div class="card-body">
-                    <h5 class="card-title">Fast Delivery</h5>
-                    <p class="card-text p-00">We are the go-to choice for hundreds of customers who have chosen us above
-                        our
-                        competition. Our list of satisfied clients speaks for itself.</p>
+            </swiper-slide>
+            <swiper-slide>
+                <div class="card-02">
+                    <img src="views/img/delivery2.jpg" class="card-img-top img" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title-01">Fast Delivery</h5>
+                        <p class="card-text p-00">We are the go-to choice for hundreds of customers who have chosen us
+                            above
+                            our
+                            competition. Our list of satisfied clients speaks for itself.
+                            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Minus impedit facere ea velit eius
+                            dolorum tempore ad et maxime quis harum voluptatem dolores autem, amet id delectus magnam
+                            nemo saepe.
+                            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Minus impedit facere ea velit eius
+                            dolorum tempore ad et maxime quis harum voluptatem dolores autem, amet id delectus magnam
+                            nemo saepe.
+                        </p>
+                    </div>
                 </div>
-            </div>
-        </div>
+            </swiper-slide>
+        </swiper-container>
     </section>
     <!--End of about section-->
 
-    <!--Create the product plan section-->
-    <section class="service">
-        <h2 class="h2-02">Our Plans</h2>
-        <div class="service-card">
-            <div class="card-plan" style="width: 22rem;">
-                <div class="card-body bd plan01">
-                    <h5 class="card-title title-plan mb-3">Free</h5>
-                    <span class="card-subtitle mb-2 txt-plan">This plan is absolutely free and open to all clients.
-                        Below are the plan features:</span>
-                    <ul class="card-text li-plan">
-                        <li>Cost Per Unit/Cloth</li>
-                        <li>Pickup and delivery</li>
-                        <li>Full laundry service on client's request</li>
-                        <li>Discount on sales</li>
-                        <li>Home and Office Service</li>
-                    </ul>
-                    <a href="#" class="card-link pay-plan">Order Now</a>
-                </div>
-            </div>
-            <div class="card-plan" style="width: 22rem;">
-                <div class="card-body bd plan02">
-                    <h5 class="card-title title-plan mb-3">Standard</h5>
-                    <span class="card-subtitle mb-2 txt-plan">This plan is suitable for clients and has more benefits to
-                        satisfy our clients.</span>
-                    <ul class="card-text li-plan">
-                        <li>$500</li>
-                        <li>Pickup and delivery</li>
-                        <li>Full laundry service on client's request</li>
-                        <li>Discount on sales</li>
-                        <li>Home and Office Service</li>
-                    </ul>
-                    <a href="#" class="card-link pay-plan">Order Now</a>
-                </div>
-            </div>
-            <div class="card-plan" style="width: 22rem;">
-                <div class="card-body bd plan03">
-                    <h5 class="card-title title-plan mb-3">Premium</h5>
-                    <span class="card-subtitle mb-2 txt-plan">This plan is best for client's who wants us to take full
-                        charge of their laundry.</span>
-                    <ul class="card-text li-plan">
-                        <li>$1K</li>
-                        <li>Pickup and delivery</li>
-                        <li>Full laundry service on client's request</li>
-                        <li>Discount on sales</li>
-                        <li>Home and Office Service</li>
-                    </ul>
-                    <a href="#" class="card-link pay-plan">Order Now</a>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!--End of the product plan section-->
-
     <!--Create the summary section-->
-    <section class="summary">
-        <h2 class="h2-03">Sky Laundry Service</h2>
-        <p class="p-01">For over 10years of existence and operations, we have constantly maintined 100% customer
-            relationship and
-            satisafaction. We have sucessfully proved our professionalism both in providing great service and also
-            ensuring we bring comfortability and ease in delivering our services to our clients. This has led to
-            maintaining long-time relationship and securing more potential clients.
-        </p>
-        <a class="btn-02">Contact Us</a>
+    <section class="summary hidden">
+        <div class="sum-txt">
+            <h2 class="h2-03">Sky Laundry Service</h2>
+            <p class="p-01">For over 10years of existence and operations, we have constantly maintined 100% customer
+                relationship and
+                satisafaction. We have sucessfully proved our professionalism both in providing great service and also
+                ensuring we bring comfortability and ease in delivering our services to our clients. This has led to
+                maintaining long-time relationship and securing more potential clients.
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Minus impedit facere ea velit eius
+                dolorum tempore ad et maxime quis harum voluptatem dolores autem, amet id delectus magnam
+                nemo saepe.
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Minus impedit facere ea velit eius
+                dolorum tempore ad et maxime quis harum voluptatem dolores autem, amet id delectus magnam
+                nemo saepe.
+            </p>
+            <a class="btn-02">Contact Us</a>
+        </div>
     </section>
     <!--End of summary section-->
 
+    <!--Create the product plan section-->
+
     <!--Create the info section-->
-    <section class="info-01">
+    <section class="info-01 reverse">
         <div class="info-txt01">
             <h2 class="h2-04">
                 Eco-Wash Solutions
@@ -168,16 +194,22 @@
             <p class="p-02" style="color: #000000a1; font-size: 1.1em; line-height: 30px;">
                 We rely on eco-friendly cleaning solutions and natural ingredients. We care about the environment and
                 take pride in our commitment to using sustainable solutions.
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Minus impedit facere ea velit eius
+                dolorum tempore ad et maxime quis harum voluptatem dolores autem, amet id delectus magnam
+                nemo saepe.
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Minus impedit facere ea velit eius
+                dolorum tempore ad et maxime quis harum voluptatem dolores autem, amet id delectus magnam
+                nemo saepe.
             </p>
-            <a href="" class="btn-03" style="width: 200px;">Read More</a>
+            <a href="" class="btn-03">Read More</a>
         </div>
         <div class="info-img00">
-            <img src="views/img/dress.jpg" alt="" class="img-01" style="width: 35vw;">
+            <img src="views/img/dress.jpg" alt="" class="img-01" />
         </div>
     </section>
     <section class="info-01">
         <div class="info-img00">
-            <img src="views/img/darya.jpg" alt="" class="img-01" style="width: 35vw;">
+            <img src="views/img/darya.jpg" alt="" class="img-01" />
         </div>
         <div class="info-txt01">
             <h2 class="h2-04">
@@ -186,11 +218,17 @@
             <p class="p-02" style="color: #000000a1; font-size: 1.1em; line-height: 30px;">
                 We understand that everyone has different needs. Whether you need to get your home or office cleaned, we
                 are here for you. Our range of services have just what you need.
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Minus impedit facere ea velit eius
+                dolorum tempore ad et maxime quis harum voluptatem dolores autem, amet id delectus magnam
+                nemo saepe.
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Minus impedit facere ea velit eius
+                dolorum tempore ad et maxime quis harum voluptatem dolores autem, amet id delectus magnam
+                nemo saepe.
             </p>
-            <a href="" class="btn-03" style="width: 200px;">Read More</a>
+            <a href="" class="btn-03">Read More</a>
         </div>
     </section>
-    <section class="info-01">
+    <section class="info-01 reverse">
         <div class="info-txt01">
             <h2 class="h2-04">
                 Easy Payments
@@ -198,20 +236,247 @@
             <p class="p-02" style="color: #000000a1; font-size: 1.1em; line-height: 30px;">
                 Making payments has never been easier. With our secure payment solutions, you can make quick payments
                 with a few clicks.
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Minus impedit facere ea velit eius
+                dolorum tempore ad et maxime quis harum voluptatem dolores autem, amet id delectus magnam
+                nemo saepe.
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Minus impedit facere ea velit eius
+                dolorum tempore ad et maxime quis harum voluptatem dolores autem, amet id delectus magnam
+                nemo saepe.
             </p>
-            <a href="" class="btn-03" style="width: 200px;">Place an order</a>
+            <a href="" class="btn-03" >Place an order</a>
         </div>
         <div class="info-img00">
-            <img src="views/img/payment2.jpg" alt="" class="img-01" style="width: 35vw;">
+            <img src="views/img/payment2.jpg" alt="" class="img-01" />
         </div>
     </section>
     <!--End of info section-->
 
+    <section class="service">
+        <h2 class="h2-07">Featured Posts</h2>
+        <div class="line2"></div>
+        <swiper-container class="mySwiper-mobile" pagination="true" pagination-clickable="true" slides-per-view="1"
+            space-between="30" free-mode="true">
+            <swiper-slide class="swiper-slide">
+                <div class="slide00">
+                    <img src="views/img/immune.jpeg" alt="Collections of suits" class="img-swiper">
+                    <div class="slide-txt">
+                        <h2 class="h2-05">Health News: <span class="topic">How the Immune system contributes to
+                                Parkinson's disease.</span></h2>
+                        <p class="p-06">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Perferendis eius nobis
+                            nihil et labore quis, ipsam odio excepturi veritatis delectus nesciunt accusantium.
+                            <span class="date">- April 12, 2023 || Ski Blog</span>
+                        </p>
+                    </div>
+                </div>
+            </swiper-slide>
+            <swiper-slide class="swiper-slide">
+                <div class="slide00">
+                    <img src="views/img/wildfire.jpg" alt="Collections of suits" class="img-swiper">
+                    <div class="slide-txt">
+                        <h2 class="h2-05">Climate News: <span class="topic">Mediterranean wildfires rage in nine
+                                countries</span></h2>
+                        <p class="p-06">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Perferendis eius nobis
+                            nihil et labore quis, ipsam odio excepturi veritatis delectus nesciunt accusantium.
+                            <span class="date">- January 12, 2023 || Ski Blog</span>
+                        </p>
+                    </div>
+                </div>
+            </swiper-slide>
+            <swiper-slide class="swiper-slide">
+                <div class="slide00">
+                    <img src="views/img/dollar.jpeg" alt="Collections of suits" class="img-swiper">
+                    <div class="slide-txt">
+                        <h2 class="h2-05">Business News: <span class="topic">US dollar to grind lower</span></h2>
+                        <p class="p-06">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Perferendis eius nobis
+                            nihil et labore quis, ipsam odio excepturi veritatis delectus nesciunt accusantium.
+                            <span class="date">- January 28, 2023 || Ski Blog</span>
+                        </p>
+                    </div>
+                </div>
+            </swiper-slide>
+            <swiper-slide class="swiper-slide">
+                <div class="slide00">
+                    <img src="views/img/match.jpeg" alt="Collections of suits" class="img-swiper">
+                    <div class="slide-txt">
+                        <h2 class="h2-05">Sport News: <span class="topic">Watch Man city vs Arsenal @4:00pm UK</span>
+                        </h2>
+                        <p class="p-06">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Perferendis eius nobis
+                            nihil et labore quis, ipsam odio excepturi veritatis delectus nesciunt accusantium.
+                            <span class="date">- August 19, 2023 || Ski Blog</span>
+                        </p>
+                    </div>
+                </div>
+            </swiper-slide>
+            <swiper-slide class="swiper-slide">
+                <div class="slide00">
+                    <img src="views/img/Caregivers-at-MB-in-Natxobe-Gile-e1688053721144.jpg" alt="Collections of suits"
+                        class="img-swiper">
+                    <div class="slide-txt">
+                        <h2 class="h2-05">Global News: <span class="topic">Health Workers Celebrate In Mozambique</span>
+                        </h2>
+                        <p class="p-06">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Perferendis eius nobis
+                            nihil et labore quis, ipsam odio excepturi veritatis delectus nesciunt accusantium.
+                            <span class="date">- February 23, 2023 || Ski Blog</span>
+                        </p>
+                    </div>
+                </div>
+            </swiper-slide>
+            <swiper-slide class="swiper-slide">
+                <div class="slide00">
+                    <img src="views/img/mbappe.jpeg" alt="Collections of suits" class="img-swiper">
+                    <div class="slide-txt">
+                        <h2 class="h2-05">Transfer News: <span class="topic">Kylian Mbappe makes final Saudi transfer
+                                decision after PSG accepted world-record bid</span></h2>
+                        <p class="p-06">Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                            <span class="date">- July 09, 2023 || Ski Blog</span>
+                        </p>
+                    </div>
+                </div>
+            </swiper-slide>
+            <swiper-slide class="swiper-slide">
+                <div class="slide00">
+                    <img src="views/img/oshoala2.jpeg" alt="Collections of suits" class="img-swiper">
+                    <div class="slide-txt">
+                        <h2 class="h2-05">
+                            <h2 class="h2-05">WWC: <span class="topic">Oshoala shirtless celebration sparks
+                                    mixed reactions</span></h2>
+                        </h2>
+                        <p class="p-06">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Perferendis eius nobis
+                            nihil et labore quis, ipsam odio excepturi veritatis delectus nesciunt accusantium.
+                            <span class="date">- April 23, 2023 || Ski Blog</span>
+                        </p>
+                    </div>
+                </div>
+            </swiper-slide>
+            <swiper-slide class="swiper-slide">
+                <div class="slide00">
+                    <img src="views/img/davido.jpeg" alt="Collections of suits" class="img-swiper">
+                    <div class="slide-txt">
+                        <h2 class="h2-05">Entertainment: Davido's manager apologise to Muslim community</h2>
+                        <p class="p-06">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Perferendis eius nobis
+                            nihil et labore quis, ipsam odio excepturi veritatis delectus nesciunt accusantium.
+                            <span class="date">- July 28, 2023 || Ski Blog</span>
+                        </p>
+                    </div>
+                </div>
+            </swiper-slide>
+        </swiper-container>
+        <button class="btn-08">Visit Blog </button>
+        <swiper-container class="mySwiper-02" pagination="true" pagination-clickable="true" slides-per-view="3"
+            space-between="30" free-mode="true">
+            <swiper-slide class="swiper-slide">
+                <div class="slide00">
+                    <img src="views/img/immune.jpeg" alt="Collections of suits" class="img-swiper">
+                    <div class="slide-txt">
+                        <h2 class="h2-05">Health News: <span class="topic">How the Immune system contributes to
+                                Parkinson's disease.</span></h2>
+                        <p class="p-06">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Perferendis eius nobis
+                            nihil et labore quis, ipsam odio excepturi veritatis delectus nesciunt accusantium.
+                            <span class="date">- April 12, 2023 || Ski Blog</span>
+                        </p>
+                    </div>
+                </div>
+            </swiper-slide>
+            <swiper-slide class="swiper-slide">
+                <div class="slide00">
+                    <img src="views/img/wildfire.jpg" alt="Collections of suits" class="img-swiper">
+                    <div class="slide-txt">
+                        <h2 class="h2-05">Climate News: <span class="topic">Mediterranean wildfires rage in nine
+                                countries</span></h2>
+                        <p class="p-06">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Perferendis eius nobis
+                            nihil et labore quis, ipsam odio excepturi veritatis delectus nesciunt accusantium.
+                            <span class="date">- January 12, 2023 || Ski Blog</span>
+                        </p>
+                    </div>
+                </div>
+            </swiper-slide>
+            <swiper-slide class="swiper-slide">
+                <div class="slide00">
+                    <img src="views/img/dollar.jpeg" alt="Collections of suits" class="img-swiper">
+                    <div class="slide-txt">
+                        <h2 class="h2-05">Business News: <span class="topic">US dollar to grind lower</span></h2>
+                        <p class="p-06">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Perferendis eius nobis
+                            nihil et labore quis, ipsam odio excepturi veritatis delectus nesciunt accusantium.
+                            <span class="date">- January 28, 2023 || Ski Blog</span>
+                        </p>
+                    </div>
+                </div>
+            </swiper-slide>
+            <swiper-slide class="swiper-slide">
+                <div class="slide00">
+                    <img src="views/img/match.jpeg" alt="Collections of suits" class="img-swiper">
+                    <div class="slide-txt">
+                        <h2 class="h2-05">Sport News: <span class="topic">Watch Man city vs Arsenal @4:00pm UK</span>
+                        </h2>
+                        <p class="p-06">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Perferendis eius nobis
+                            nihil et labore quis, ipsam odio excepturi veritatis delectus nesciunt accusantium.
+                            <span class="date">- August 19, 2023 || Ski Blog</span>
+                        </p>
+                    </div>
+                </div>
+            </swiper-slide>
+            <swiper-slide class="swiper-slide">
+                <div class="slide00">
+                    <img src="views/img/Caregivers-at-MB-in-Natxobe-Gile-e1688053721144.jpg" alt="Collections of suits"
+                        class="img-swiper">
+                    <div class="slide-txt">
+                        <h2 class="h2-05">Global News: <span class="topic">Health Workers Celebrate In Mozambique</span>
+                        </h2>
+                        <p class="p-06">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Perferendis eius nobis
+                            nihil et labore quis, ipsam odio excepturi veritatis delectus nesciunt accusantium.
+                            <span class="date">- February 23, 2023 || Ski Blog</span>
+                        </p>
+                    </div>
+                </div>
+            </swiper-slide>
+            <swiper-slide class="swiper-slide">
+                <div class="slide00">
+                    <img src="views/img/mbappe.jpeg" alt="Collections of suits" class="img-swiper">
+                    <div class="slide-txt">
+                        <h2 class="h2-05">Transfer News: <span class="topic">Kylian Mbappe makes final Saudi transfer
+                                decision after PSG accepted world-record bid</span></h2>
+                        <p class="p-06">Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                            <span class="date">- July 09, 2023 || Ski Blog</span>
+                        </p>
+                    </div>
+                </div>
+            </swiper-slide>
+            <swiper-slide class="swiper-slide">
+                <div class="slide00">
+                    <img src="views/img/oshoala2.jpeg" alt="Collections of suits" class="img-swiper">
+                    <div class="slide-txt">
+                        <h2 class="h2-05">
+                            <h2 class="h2-05">WWC: <span class="topic">Oshoala shirtless celebration sparks
+                                    mixed reactions</span></h2>
+                        </h2>
+                        <p class="p-06">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Perferendis eius nobis
+                            nihil et labore quis, ipsam odio excepturi veritatis delectus nesciunt accusantium.
+                            <span class="date">- April 23, 2023 || Ski Blog</span>
+                        </p>
+                    </div>
+                </div>
+            </swiper-slide>
+            <swiper-slide class="swiper-slide">
+                <div class="slide00">
+                    <img src="views/img/davido.jpeg" alt="Collections of suits" class="img-swiper">
+                    <div class="slide-txt">
+                        <h2 class="h2-05">Entertainment: Davido's manager apologise to Muslim community</h2>
+                        <p class="p-06">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Perferendis eius nobis
+                            nihil et labore quis, ipsam odio excepturi veritatis delectus nesciunt accusantium.
+                            <span class="date">- July 28, 2023 || Ski Blog</span>
+                        </p>
+                    </div>
+                </div>
+            </swiper-slide>
+        </swiper-container>
+        <button class="btn-07">Visit Blog </button>
+    </section>
+    <!--End of the product plan section-->
     <!--Create the reviews section-->
     <section class="reviews">
         <span class="fb-00">Feedback and reviews</span>
-        <h5 class="h5-00">An outstanding service from sky laundry. I'll recommend them over and over again. Thanks</h5>
-        <p class="p-0">Mr Christopher ~ <span class="inline">happy customer</span></p>
+        <h5 class="h5-00" id="feedback"></h5>
+        <p class="p-0" id="client"></p>
         <button class="btn-review">Leave a feedback</button>
     </section>
     <!--End of reviews section-->
@@ -219,7 +484,7 @@
     <!--Extension of info section-->
     <section class="info-01">
         <div class="info-img00">
-            <img src="views/img/contact.jpg" alt="" class="img-01" style="width: 35vw;">
+            <img src="views/img/contact.jpg" alt="" class="img-01">
         </div>
         <div class="info-txt01">
             <h2 class="h2-04">
@@ -230,11 +495,11 @@
                 decision to choose us for your laundry needs. Get in touch with our customer service team any time with
                 any queries you may have.
             </p>
-            <a href="" class="btn-03" style="width: 200px;">Contact Us</a>
+            <a href="" class="btn-03">Contact Us</a>
         </div>
     </section>
     <!--End of extension-->
-    
+
     <!--Create the request form-->
     <div class="request hidden">
         <div class="req-back">
@@ -243,7 +508,8 @@
             </div>
             <div class="request-form">
                 <h5 class="h5-01">Clients Request Form</h5>
-                <p class="p-04">Please fill the form with adequate and proper informations. Any fake/untrue information will
+                <p class="p-04">Please fill the form with adequate and proper informations. Any fake/untrue information
+                    will
                     lead to cancelation of the contract.</p>
                 <form action="" class="form-00">
                     <div class="form-floating mb-3">
@@ -259,10 +525,12 @@
                         <label for="floatingPassword">Phone Number</label>
                     </div>
                     <div class="form-floating mb-3">
-                        <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea"></textarea>
+                        <textarea class="form-control" placeholder="Leave a comment here"
+                            id="floatingTextarea"></textarea>
                         <label for="floatingTextarea">Do you have any recommendations or request</label>
                     </div>
-                    <div class="inline-01"><input type="checkbox" name="t&c" id="t&c" /><span>I agree to the terms nd condition</span></div>
+                    <div class="inline-01"><input type="checkbox" name="t&c" id="t&c" /><span>I agree to the terms nd
+                            condition</span></div>
                     <button type="button" class="btn btn-success">Submit</button>
                 </form>
             </div>
@@ -311,9 +579,9 @@
 
 
 
+    <script src="index.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-element-bundle.min.js"></script>
 
-
-    
     <!-- bootstrap cdn links -->
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
         integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
